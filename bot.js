@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.on('message', async message => {
+var prefix = "$";
  
    if (message.content.startsWith("$new")) {  
         const reason = message.content.split(" ").slice(1).join(" ");  
